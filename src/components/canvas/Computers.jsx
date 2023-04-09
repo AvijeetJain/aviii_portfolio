@@ -50,17 +50,15 @@ const ComputersCanvas = () => {
 
     mediaQuery.removeEventListener('change',
     handleMediaQueryChange);
-    
   }, [])
 
   return(
     <Canvas
-    frameLoop='demand'
+    frameloop='demand'
     shadows
     camera={{position: [20, 3, 5], fov: 25}}
     gl={{preserveDrawingBuffer: true}}
     >
-
       <Suspense fallback={ <CanvasLoader />} >
         <OrbitControls 
         enableZoom={false}
@@ -68,9 +66,7 @@ const ComputersCanvas = () => {
         minPolarAngle = { Math.PI / 2 }
         />
         <Computers isMobile={isMobile} />
-
       </Suspense>
-
       <Preload all />
     </Canvas>
   )
@@ -90,7 +86,6 @@ const ComputersCanvas = () => {
 //         maxPolarAngle={Math.PI / 2}
 //         minPolarAngle={Math.PI / 2}
 //         />
-
 //         <Computers />
 //       </Suspense>
 
@@ -100,13 +95,3 @@ const ComputersCanvas = () => {
 // }
 
 export default ComputersCanvas
-
-// import React from 'react'
-
-// const Computers = () => {
-//   return (
-//     <div> Computers </div>
-//   )
-// }
-
-// export default Computers
