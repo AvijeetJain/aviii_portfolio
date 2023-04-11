@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
-import {styles} from '../styles';
-import {navLinks} from '../constants';
-import {logo, menu, close} from '../assets';
+import { styles } from '../styles';
+import { navLinks } from '../constants';
+import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -39,7 +39,6 @@ const Navbar = () => {
               <a href={`#${Link.id}`}>{Link.title}</a>
               </li>
             ))}
-            
           </ul> 
 
           <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -70,9 +69,7 @@ const Navbar = () => {
                 </li>
               ))}            
             </ul>
-
           </div>
-
         </div> 
     </nav>
   )

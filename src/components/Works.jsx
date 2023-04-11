@@ -8,7 +8,7 @@ import { SectionWrapper } from './hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_Link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return(
     <motion.div variants={fadeIn("up", "spring", index*0.5, 0.75)} >
       <Tilt
@@ -26,12 +26,11 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_Link }
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div onClick={() => window.open
-            (source_code_Link, "blank")}
+            <div onClick={() => window.open(source_code_link, "blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
               <img 
               src={github} 
-              alt="source cose" 
+              alt="source code" 
               className='w-1/2 h-1/2 object-contain'/>
             </div>
           </div>
@@ -77,7 +76,10 @@ const Works = () => {
       <motion.p 
       variants={fadeIn(" ", " ", 0.1, 1)}
       className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        The following projects are vo hai jo maine khud banaye hai. aur uch jaana hai toh maine ni bata raha.
+        I have crafted a diverse range of projects that demonstrate my technical proficiency and innovation. 
+        Notably, I have developed a MERN (MongoDB, Express.js, React, and Node.js) application that showcases 
+        my expertise in building modern, full-stack web applications. In addition, I have designed a Python GUI using the 
+        robust tkinter library, demonstrating my aptitude for creating intuitive and visually appealing user interfaces.
       </motion.p>
     </div>
 

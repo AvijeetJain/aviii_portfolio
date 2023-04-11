@@ -5,7 +5,6 @@ import { technologies } from "../constants";
 
 import { motion } from "framer-motion";
 import { textVariant } from '../utils/motion';
-
 import { styles } from '../styles';
 
 const Tech = () => {

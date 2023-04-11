@@ -53,9 +53,7 @@ const Experience = () => {
     <>
     <motion.div variants={textVariant()}>
       <p className={`${styles.sectionSubText} text-center`}>
-        I am currently studying at abv Indian Institute of Information Technology and Management, Gwalior. 
-        I am an part of the institutes biggest and oldest Techno-Managerial Forum Abhigyan Abhikaushalam Students Forum 
-        standing more than 2 decades long.
+        What i have done till now.
       </p>
       
       <h2 className={`${styles.sectionHeadText} text-center`}>
