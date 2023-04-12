@@ -133,7 +133,7 @@ const Contact = () => {
       </motion.div>
     </div>
 
-    <motion.div variants = {slideIn('right', 'tween', 2, 1)}>
+    <motion.div variants = {slideIn('right', 'tween', 0.7, 1)}>
       <div className="flex flex-row flex-wrap justify-end gap-10 mt-10">
         <p className="text-[23px] text-secondary tracking-wider text-white font-bold">Find me on : </p>
         {socials.map((social) => (

@@ -141,8 +141,8 @@ import {
       date: "August 2022 - Current",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Made our institutes annual magazine Abhishar using technologies like Adobe PhotoShop and Illustrator.",
-        "Organized various events based on various technical ad managerial domains.",
+        "Made our institutes annual magazine, Abhishar using Adobe PhotoShop and Illustrator.",
+        "Organized various events based on various technical and managerial domains.",
         "Participating in code reviews and providing constructive feedback to other developers & designers.",
       ],
     },
